@@ -4,322 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Day 4 - CSS NARYAN/style.css">
     <title>Afterglow Health</title>
-    <link rel="stylesheet" href="/Day 2  Materialize/materializedemo.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <style>
-        /* Add custom CSS styles here */
-        .animated-table {
-            border: 2px solid transparent;
-            animation: rgbFlowAnimation 2s ease-in-out infinite alternate;
-        }
-
-        .animated-row {
-            animation: rgbFlowAnimation 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes rgbFlowAnimation {
-            0% {
-                border-color: rgb(255, 0, 0);
-            }
-
-            25% {
-                border-color: rgb(0, 255, 0);
-            }
-
-            50% {
-                border-color: rgb(0, 0, 255);
-            }
-
-            75% {
-                border-color: rgb(255, 255, 0);
-            }
-
-            100% {
-                border-color: rgb(255, 0, 255);
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="#" class="brand-logo">Afterglow Health</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#innovation">Innovation</a></li>
-                <li><a href="#outcomes">Outcomes</a></li>
-                <li><a href="#international">Internationalization</a></li>
-                <li><a href="#operations">Operations</a></li>
-                <li><a href="#market">Market Strategy</a></li>
-                <li><a href="#statistics">Statistics</a></li>
-                <li><a href="#global">Global Demand</a></li>
-                <li><a href="#video">Introduction Video</a></li>
-                <li><a href="#visit">Visit Us</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="matrix-background"></div>
+    <header class="dark-mode">
+        <h1 class="animated-text">afterglow.health</h1>
+    </header>
+    <main>
+        <section class="pricing">
+            <div class="price-box glow-animation">
+                <h2 class="animated-text">Basic Plan - Tranquility</h2>
+                <p class="price">£9.99 per month</p>
+                <ul class="features">
+                    <li class="animated-text">Access to a library of beginner meditation sessions</li>
+                    <li class="animated-text">Guided meditation for stress relief and relaxation</li>
+                    <li class="animated-text">Sleep stories for a peaceful night's rest</li>
+                    <li class="animated-text">Weekly mindfulness reminders</li>
+                    <li class="animated-text">Cancel anytime</li>
+                </ul>
+                <button class="add-to-cart medical-green pulse-animation">Add to Cart</button>
+            </div>
 
-    <!-- Side Navigation (Mobile) -->
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#about">About</a></li>
-        <li><a href="#innovation">Innovation</a></li>
-        <li><a href="#outcomes">Outcomes</a></li>
-        <li><a href="#international">Internationalization</a></li>
-        <li><a href="#operations">Operations</a></li>
-        <li><a href="#market">Market Strategy</a></li>
-        <li><a href="#statistics">Statistics</a></li>
-        <li><a href="#global">Global Demand</a></li>
-        <li><a href="#video">Introduction Video</a></li>
-        <li><a href="#visit">Visit Us</a></li>
-    </ul>
+            <div class="price-box glow-animation">
+                <h2 class="animated-text">Premium Plan - Serenity Plus</h2>
+                <p class="price">£19.99 per month</p>
+                <ul class="features">
+                    <li class="animated-text">All features from the Tranquility plan</li>
+                    <li class="animated-text">Expansive library of meditation sessions for all levels</li>
+                    <li class="animated-text">Exclusive sessions for reducing anxiety and improving focus</li>
+                    <li class="animated-text">Customizable meditation timers</li>
+                    <li class="animated-text">Personalized meditation recommendations</li>
+                    <li class="animated-text">Priority customer support</li>
+                    <li class="animated-text">Cancel anytime</li>
+                </ul>
+                <button class="add-to-cart medical-green pulse-animation">Add to Cart</button>
+            </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h1 class="aurora-text" style="margin-top: 80px;">☀️ Afterglow Health ☀️</h1>
-        <p class="aurora-text">An innovative mental health app rooted in Eastern medicine.</p>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-heading">🚀 About Afterglow Health</h2>
-            <table class="striped">
-                <tbody>
-                    <tr>
-                        <td>App Name</td>
-                        <td>Afterglow Health</td>
-                    </tr>
-                    <tr>
-                        <td>Description</td>
-                        <td>An innovative mental health app rooted in Eastern medicine.</td>
-                    </tr>
-                    <!-- Add more details as needed -->
-                </tbody>
-            </table>
+            <div class="price-box glow-animation">
+                <h2 class="animated-text">Ultimate Plan - Inner Peace Pro</h2>
+                <p class="price">£29.99 per month</p>
+                <ul class="features">
+                    <li class="animated-text">All features from the Serenity Plus plan</li>
+                    <li class="animated-text">Access to expert-led live meditation classes</li>
+                    <li class="animated-text">Advanced meditation courses for personal growth</li>
+                    <li class="animated-text">Meditation challenges and progress tracking</li>
+                    <li class="animated-text">Download sessions for offline listening</li>
+                    <li class="animated-text">Priority access to new features and content</li>
+                    <li class="animated-text">Cancel anytime</li>
+                </ul>
+                <button class="add-to-cart medical-green pulse-animation">Add to Cart</button>
+            </div>
         </section>
-
-        <!-- Innovation Section -->
-        <section id="innovation">
-            <h2 class="section-heading">🌟 Innovation Phases</h2>
-            <table class="striped">
-                <tbody>
-                    <tr>
-                        <td>Phase 1</td>
-                        <td>App launch focusing on mental health with a community and marketplace.</td>
-                    </tr>
-                    <tr>
-                        <td>Phase 2</td>
-                        <td>Wearable chip for personalized stress monitoring and activity recommendations.</td>
-                    </tr>
-                    <tr>
-                        <td>Phase 3</td>
-                        <td>Motivation app combining relaxation and activity needs.</td>
-                    </tr>
-                    <!-- Add more phases as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Outcomes Section -->
-        <section id="outcomes">
-            <h2 class="section-heading">💡 Outcomes</h2>
-            <table class="striped">
-                <tbody>
-                    <tr>
-                        <td>Alternative Offer</td>
-                        <td>Offers an alternative to existing apps with a community to counteract loneliness,
-                            especially relevant post-COVID.</td>
-                    </tr>
-                    <tr>
-                        <td>Diverse Community</td>
-                        <td>Aims to create a culturally diverse and inclusive mental health support community.</td>
-                    </tr>
-                    <tr>
-                        <td>Corporate Partnerships</td>
-                        <td>Targets corporate wellness partnerships to reduce burnout and stress-related issues.</td>
-                    </tr>
-                    <!-- Add more outcomes as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Internationalization Section -->
-        <section id="international">
-            <h2 class="section-heading">🌎 Internationalization and Growth</h2>
-            <table class="striped">
-                <tbody>
-                    <tr>
-                        <td>Internationalization</td>
-                        <td>Positioned for easy internationalization.</td>
-                    </tr>
-                    <tr>
-                        <td>First-Year Goal</td>
-                        <td>Aims for 50,000 users within the first year, anticipating subsequent revenue growth and
-                            attracting investment.</td>
-                    </tr>
-                    <!-- Add more details as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Operations Section -->
-        <section id="operations">
-            <h2 class="section-heading">💼 Operations and Finance</h2>
-            <table class="striped animated-table">
-                <tbody>
-                    <tr class="animated-row">
-                        <td>Current Staffing</td>
-                        <td>Currently using subcontractors, planning to hire FTEs as sales increase.</td>
-                    </tr>
-                    <tr class="animated-row">
-                        <td>CEO's Role</td>
-                        <td>CEO leveraging marketing expertise and networking to build the community.</td>
-                    </tr>
-                    <tr class="animated-row">
-                        <td>Future Phases</td>
-                        <td>Future phases include AI and Chatbot integration.</td>
-                    </tr>
-                    <tr class="animated-row">
-                        <td>Internship</td>
-                        <td>Open to interns and potential KTP projects.</td>
-                    </tr>
-                    <!-- Add more details as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Market Strategy Section -->
-        <section id="market">
-            <h2 class="section-heading">🚀 Market Strategy</h2>
-            <table class="striped animated-table">
-                <tbody>
-                    <tr class="animated-row">
-                        <td>Digital Marketing</td>
-                        <td>Focus on digital marketing and storytelling to highlight the blend of Eastern wisdom and
-                            technology.</td>
-                    </tr>
-                    <tr class="animated-row">
-                        <td>Pricing</td>
-                        <td>Initial model offers a lifetime deal for £17 to quickly scale the app. Diverse pricing
-                            structures for individuals, companies, and enterprises.</td>
-                    </tr>
-                    <!-- Add more details as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Statistics Section -->
-        <section id="statistics">
-            <h2 class="section-heading">📊 Statistics</h2>
-            <table class="striped animated-table">
-                <tbody>
-                    <tr class="animated-row">
-                        <td>Mindfulness</td>
-                        <td>80% of UK adults practicing mindfulness reported reduced mental health issues in 2022.</td>
-                    </tr>
-                    <!-- Add more statistics as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Global Demand Section -->
-        <section id="global">
-            <h2 class="section-heading">🌍 Global Demand</h2>
-            <table class="striped animated-table">
-                <tbody>
-                    <tr class="animated-row">
-                        <td>Demand</td>
-                        <td>Global demand for mental health solutions, with plans for open-source availability in
-                            economically challenged regions.</td>
-                    </tr>
-                    <!-- Add more details as needed -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Introduction Video Section -->
-        <section id="video">
-            <h2 class="section-heading">📺 Watch our Introduction Video</h2>
-            <!-- Add video embed code or link here -->
-        </section>
-
-        <!-- Visit Us Section -->
-        <section id="visit">
-            <h2 class="section-heading">📍 Visit Us</h2>
-            <!-- Add address and map here -->
-        </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="page-footer">
-        <!-- Footer content goes here -->
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-Jqt3SqofawRcv/BI1PHpk8v5OE0tFfFmqF/IYI/Cx0=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/Day 2  Materialize/materializedemo.js"></script>
-
-    <!-- Include additional JavaScript features as needed -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Auto Init
-            M.AutoInit();
-        });
-    </script>
-
-    <!-- JavaScript animations -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // JavaScript animations
-            // Example Click Event Handler
-            document.querySelector('#myButton').addEventListener('click', function () {
-                // Your custom logic here when the button is clicked
-                alert('Button clicked!');
-            });
-
-            // Example Custom Animation
-            const myElement = document.querySelector('.custom-element');
-            myElement.addEventListener('mouseover', function () {
-                // Add your custom animation or style changes here
-                myElement.style.backgroundColor = 'lightblue';
-            });
-
-            // Additional JavaScript and animations can be added here
-
-            // Add more custom JavaScript animations here
-
-            // RGB Flow Animation
-            const rgbFlowElements = document.querySelectorAll('.animated-table');
-            rgbFlowElements.forEach((element, index) => {
-                element.style.animation = `rgbFlowAnimation 2s ease-in-out ${index * 0.2}s infinite alternate`;
-            });
-
-            // RGB Flow Animation Keyframes
-            const rgbFlowAnimation = `
-                0% {
-                    border-color: rgb(255, 0, 0);
-                }
-                25% {
-                    border-color: rgb(0, 255, 0);
-                }
-                50% {
-                    border-color: rgb(0, 0, 255);
-                }
-                75% {
-                    border-color: rgb(255, 255, 0);
-                }
-                100% {
-                    border-color: rgb(255, 0, 255);
-                }
-            `;
-        });
-    </script>
+    </main>
+    <script src="/Day 4 - CSS NARYAN/matrix.js"></script>
 </body>
 
 </html>

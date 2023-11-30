@@ -1,0 +1,331 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Matrix Code Background */
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: black;
+    opacity: 0.1;
+}
+
+@keyframes matrix {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.matrix-background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #00FF00;
+    animation: matrix 5s linear infinite;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: #ffffff;
+}
+
+/* Animated header text */
+.animated-text {
+    animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: #00FF00;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price-box {
+    width: 100%;
+    max-width: 350px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    animation: rgbAnimation 5s infinite alternate, scaleAnimation 5s infinite alternate, fadeAnimation 5s infinite alternate;
+    margin-bottom: 20px;
+}
+
+/* RGB Glow Animation */
+.glow-animation {
+    animation: rgbGlow 2s linear infinite alternate;
+}
+
+@keyframes rgbGlow {
+    0% {
+        box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000;
+    }
+}
+
+.price-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #00FF00;
+}
+
+/* Pulse Animation */
+.pulse-animation {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rotate Animation */
+.rotate-animation {
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Bounce Animation */
+.bounce-animation {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Fade Animation */
+.fade-animation {
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Shake Animation */
+.shake-animation {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25%,
+    75% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.price-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease;
+}
+
+.price {
+    font-size: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 16px;
+    animation: bulletPointAnimation 2s ease;
+}
+
+.features li::before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+}
+
+.add-to-cart {
+    background-color: #00FF00;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: rgbAnimation 5s infinite alternate;
+    margin-top: 10px;
+}
+
+/* Additional Animations for Background */
+.matrix-background::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #00FF00;
+    animation: matrixVertical 10s linear infinite;
+}
+
+@keyframes matrixVertical {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.matrix-background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #00FF00;
+    animation: matrixHorizontal 10s linear infinite;
+}
+
+@keyframes matrixHorizontal {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    .price-box {
+        width: 100%;
+        max-width: 350px;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        animation: rgbAnimation 5s infinite alternate, scaleAnimation 5s infinite alternate, fadeAnimation 5s infinite alternate;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query for Mobile Phones and Smaller Screens */
+@media (max-width: 480px) {
+    .price-box {
+        max-width: 100%;
+    }
+}
